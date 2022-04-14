@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_categories",
+  "info": {
+    "name": "shop-category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shopCategory": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20,
+      "minLength": 1
+    },
+    "shop_data": {
+      "via": "shop_category",
+      "collection": "shop-data"
+    }
+  }
+}

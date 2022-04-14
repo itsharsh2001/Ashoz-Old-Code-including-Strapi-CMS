@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_data",
+  "info": {
+    "name": "shop-data",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index": {
+      "type": "integer"
+    },
+    "shopName": {
+      "type": "string",
+      "maxLength": 30,
+      "minLength": 1,
+      "required": true
+    },
+    "navbar": {
+      "type": "json",
+      "required": true
+    },
+    "personImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "aboutUs": {
+      "type": "json"
+    },
+    "offers": {
+      "type": "json"
+    },
+    "offerBannerImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "specialProductBannerImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ArrivedTodayBannerImage": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "shop_category": {
+      "model": "shop-category",
+      "via": "shop_data"
+    }
+  }
+}

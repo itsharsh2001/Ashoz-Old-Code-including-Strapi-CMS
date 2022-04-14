@@ -1,0 +1,19 @@
+.threedvideo{ 
+    box-shadow: #00000029 3px 0px 3px;
+    /* box-shadow: inset #00000029 3px 3px 6px; */
+    border: none!important;
+    outline: none!important;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* box-shadow: #00000016 0px 0px 3px!important; */
+    /* z-index: 1300!important; */
+} 
+
+.threedvideo:hover,
+.threedvideo:active,
+.threedvideo:focus{
+    border: none!important;
+    outline: none!important;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

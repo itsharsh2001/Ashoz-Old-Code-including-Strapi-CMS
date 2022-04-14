@@ -1,0 +1,8 @@
+.bottomnavbar{
+    width: 100%;
+    height: 33px;
+    z-index: 1;
+    opacity:55%;
+    background-color: #F6E1E1;
+    border-top:1px solid white;
+}

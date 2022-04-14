@@ -1,0 +1,30 @@
+.topnavbar{
+    width: 100%;
+    height: 33px;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 1;
+    /* opacity: 1; */
+    /* background-color: #1A1A1A; */
+    border: 1px solid #707070;
+    /* box-shadow: #00000016 3px 3px 1px; */
+}
+
+
+.topnavbar span{
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: none;
+    /* background-color: #FFBC13 !important; */
+    border: none !important;
+    box-shadow: inset #00000029 1px 1px 2px !important;
+    /* color: #F5EED5 !important; */
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+   padding-left: 40px;
+   padding-right: 40px;
+}
